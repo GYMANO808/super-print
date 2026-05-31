@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super print</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Cairo',sans-serif;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      z-index:1000;
+      background:rgba(0,0,0,0.5);
+      backdrop-filter:blur(10px);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#d4a373;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#d4a373;
+    }
+
+    .hero{
+      height:120vh;
+      background:url('https://i.ibb.co/S7Kk9qhY/1780250289367.png') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+    }
+
+    .hero::after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.65);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:700px;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:65px;
+      margin-bottom:20px;
+      color:#fff;
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#ddd;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 35px;
+      background:#d4a373;
+      color:white;
+      border-radius:50px;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#b08968;
+    }
+
+    section{
+      padding:100px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      color:#d4a373;
+      margin-bottom:10px;
+    }
+
+    .menu-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .menu-card{
+      background:#1b1b1b;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.4s;
+      box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .menu-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .menu-card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .menu-info{
+      padding:20px;
+    }
+
+    .menu-info h3{
+      margin-bottom:10px;
+      color:#fff;
+    }
+
+    .menu-info p{
+      color:#bbb;
+      margin-bottom:15px;
+    }
+
+    .price{
+      color:#d4a373;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      align-items:center;
+      gap:50px;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:25px;
+    }
+
+    .about-text h3{
+      font-size:35px;
+      margin-bottom:20px;
+      color:#d4a373;
+    }
+
+    .about-text p{
+      color:#ccc;
+      line-height:2;
+      font-size:18px;
+    }
+
+    footer{
+      background:#090909;
+      text-align:center;
+      padding:25px;
+      color:#999;
+      border-top:1px solid #222;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style></head>
+<body>  <header>
+    <div class="logo"> Super Print </div><nav>
+  <a href="#home">الرئيسية</a>
+  <a href="#menu">المنيو</a>
+  <a href="#about">عن الكافيه</a>
+  <a href="#contact">تواصل</a>
+</nav>
+
+  </header>  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>لسنا الوحيدون لكننا مميزون</h1>
+      <p>
+        استمتع بافضل تجربة طباعة
+      </p>
+      <a href="#menu" class="btn">شوف العروض</a>
+    </div>
+  </section>  <section id="menu">
+    <div class="section-title">
+      <h2>المنيو</h2>
+      <p>أشهر العروض عندنا</p>
+    </div><div class="menu-container">
+
+  <div class="menu-card">
+    <img src="https://i.ibb.co/B5Y9c7rY/1780247654885-2.jpg">
+    <div class="menu-info">
+      <h3>بصمة متحركة</h3>
+      <p>جمال البصمة المتحركة في الصور غير 🤍🤍✨</p>
+      <div class="price">300 جنيه</div>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://i.ibb.co/Z1mJMtmz/1780247719048-2.jpg">
+    <div class="menu-info">
+      <h3>المج السحري</h3>
+      <p>مج سحري بيظهر الصورة لما يتحط فيه ماية سخنة ☕❤️✨</p>
+      <div class="price">180 جنيه</div>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://i.ibb.co/6xQWJsf/1780247566715-2.jpg" >
+    <div class="menu-info">
+      <h3>ادوات كتب الكتاب </h3>
+      <p>صوني شبكة ومنديل وبصمة كتب الكتاب جمال ودلال 🤍✨</p>
+      <div class="price">350 جنيه</div>
+    </div>
+  </div>
+
+</div>
+
+  </section>  <section id="about">
+    <div class="about">
+      <img src="https://www.mtdpack.com/wp-content/uploads/2025/01/Offset-Printing-Press.jpg"><div class="about-text">
+    <h3>عن المطبعة</h3>
+    <p>
+      مكان مصمم لعشاق الفن والتصميم  
+      بنقدملك تجربة فخمة مع جودة ممتازة وتصميم عصري 
+      <br>
+      <b> قيمة مقابل سعر</b>
+    </p>
+  </div>
+</div>
+
+  </section>  <section id="contact">
+    <div class="section-title">
+      <h2>تواصل معنا</h2>
+      <p>اطبع عندنا دلوقتي</p>
+    </div><div style="text-align:center; line-height:2; font-size:20px; color:#ccc;">
+  <p>📍 القاهرة - مصر</p>
+  <p>📞 01129558402</p>
+  <p>📞 01055477974</p>
+  <p>📧 nasrsopr46@gmail.com</p>
+</div>
+
+  </section>  <footer>
+    © 2026 Super Print - All Rights Reserved
+  </footer></body>
+</html>
